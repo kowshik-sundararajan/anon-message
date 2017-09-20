@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if messages %}
+        {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+    {% else %}
+        <h3>No messages found!</h3>
+    {% endif %}
+{% endblock %}
